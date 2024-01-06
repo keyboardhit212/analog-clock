@@ -1,0 +1,9 @@
+.hour-spindle {
+    position: absolute;
+    top: 396px;
+    left: 399px;    
+    width: 230px;
+    height: 16px;
+    background: black;
+    transform-origin: 0px 8px;
+}

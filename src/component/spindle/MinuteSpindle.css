@@ -1,0 +1,10 @@
+.minute-spindle {
+    position: absolute;
+    display: block;
+    top: 396px;
+    left: 399px;    
+    width: 340px;
+    height: 6px;
+    background: black;
+    transform-origin: 0px 3px;
+}

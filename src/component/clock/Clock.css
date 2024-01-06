@@ -1,0 +1,125 @@
+.clock {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    border: 6px solid black;
+    border-radius: 400px/400px;
+    margin: 50px auto 0 auto;
+    font-size: 75px;
+    font-weight: bold;
+}
+
+/* .h-guideline {
+    position: relative;
+    top: 400px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.v-guideline {
+    position: relative;
+    top: 400px;
+    width: 100%;
+    transform: rotate(90deg);
+    border: 1px solid black;
+} */
+
+/* .d1-guideline {
+    position: relative;
+    top: 400px;
+    width: 100%;
+    transform: rotate(120deg);
+    border: 1px solid black;
+}
+
+.d2-guideline {
+    position: relative;
+    top: 400px;
+    width: 100%;
+    transform: rotate(150deg);
+    border: 1px solid black;
+} */
+
+.twelve {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 365px;
+}
+
+.one {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 200px;
+}
+
+.two {
+    display: block;
+    position: absolute;
+    top: 170px;
+    right: 60px;
+}
+
+.three {
+    display: block;
+    position: absolute;
+    top: 359px; 
+    right: 10px;
+}
+
+.four {
+    display: block;
+    position: absolute;
+    top: 540px; 
+    right: 70px;
+}
+
+.five {
+    display: block;
+    position: absolute;
+    top: 675px; 
+    right: 200px;
+}
+
+.six {
+    display: block;
+    position: absolute;
+    bottom: 0px; 
+    left: 382px;
+}
+
+.seven {
+    display: block;
+    position: absolute;
+    bottom: 50px; 
+    left: 207px;
+}
+
+.eight {
+    display: block;
+    position: absolute;
+    bottom: 170px; 
+    left: 70px;
+}
+
+.nine {
+    display: block;
+    position: absolute;
+    top: 359px; 
+    left: 10px;
+}
+
+.ten {
+    display: block;
+    position: absolute;
+    top: 180px; 
+    left: 60px;
+}
+
+.eleven {
+    display: block;
+    position: absolute;
+    top: 45px; 
+    left: 180px;
+}

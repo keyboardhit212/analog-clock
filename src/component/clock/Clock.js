@@ -3,19 +3,24 @@ import './Clock.css';
 import HourSpindle from "../spindle/HourSpindle";
 import MinuteSpindle from "../spindle/MinuteSpindle";
 import SecondSpindle from "../spindle/SecondSpindle";
+import Time from "../../classes/Time";
 
 
 
 export default function Clock() {
-    const SECOND = 0, MINUTE = 0, HOUR = 12;
-    const [second, setSecond] = useState(() => SECOND);
-    const [minute, setMinute] = useState(() => MINUTE);
-    const [hour, setHour] = useState(() => HOUR);
+    const [time, setTime] = useState(() => ({
+        second: 0,
+        minute: 0,
+        hour: 12
+    }));
+
 
     useEffect(() => {
-            let second = SECOND;
-            let minute = MINUTE;
-            let hour = HOUR;
+            let time = new Time().getTime();
+            setTime(time);
+            let second = time.second; 
+            let minute = time.minute;
+            let hour = time.hour;
 
             function incrementSecond() {
                 if (second >= 59) {
@@ -24,7 +29,7 @@ export default function Clock() {
                 }
                 else
                     second++;
-                setSecond(second);
+                setTime({second, minute, hour});
             }
 
             function incrementMinute() {
@@ -34,7 +39,7 @@ export default function Clock() {
                 }
                 else
                     minute++;
-                setMinute(minute);
+                setTime({second, minute, hour});
             }
 
             function incrementHour() {
@@ -42,7 +47,7 @@ export default function Clock() {
                     hour = 1;
                 else
                     hour++;
-                setHour(hour);
+                setTime({second, minute, hour});
             }
 
             function tick() {
@@ -74,9 +79,9 @@ export default function Clock() {
             <span className="nine">9</span>
             <span className="ten">10</span>
             <span className="eleven">11</span>
-            <HourSpindle hour={hour}/>
-            <MinuteSpindle minute={minute}/>
-            <SecondSpindle second={second}/>
+            <HourSpindle hour={time.hour}/>
+            <MinuteSpindle minute={time.minute}/>
+            <SecondSpindle second={time.second}/>
         </div>
     );
 }   
